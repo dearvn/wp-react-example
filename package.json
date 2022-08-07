@@ -1,0 +1,24 @@
+{
+  "name": "wp-react-example",
+  "version": "0.0.1",
+  "description": "A example made by WordPress and best architectures",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "start:hot": "wp-scripts start --hot"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/eslint-plugin": "^12.4.0",
+    "@wordpress/i18n": "^4.10.0",
+    "@wordpress/scripts": "^22.5.0",
+    "autoprefixer": "^10.4.8",
+    "cssnano": "^5.1.12",
+    "postcss": "^8.4.14",
+    "react-router-dom": "^6.3.0",
+    "tailwindcss": "^3.1.7"
+  }
+}

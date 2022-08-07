@@ -1,0 +1,41 @@
+{
+    "name": "dearvn/jobplace",
+    "description": "A example platform made by WordPress",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Donald",
+            "email": "donald.nguyen.it@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "^7.3||8.0"
+        },
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "dev-master",
+        "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
+        "tareq1988/wp-php-cs-fixer": "dev-master",
+        "phpcompatibility/phpcompatibility-wp": "dev-master",
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dearvn\\JobPlace\\": "includes/",
+            "Dearvn\\JobPlace\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "phpcs": [
+            "phpcs -p -s"
+        ],
+        "phpcbf": [
+            "phpcbf -p"
+        ]
+    }
+}
