@@ -122,5 +122,9 @@ class Manager {
 
 		wp_enqueue_style( 'job-place-css' );
 		wp_enqueue_script( 'job-place-app' );
+		wp_localize_script('job-place-app', 'wpApiSettings', [
+			'root' => esc_url_raw( rest_url() ),
+			'nonce' => wp_create_nonce( 'wp_rest' )
+		]);
 	}
 }

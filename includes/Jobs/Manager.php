@@ -40,7 +40,7 @@ class Manager {
 	public function all( array $args = array() ) {
 		$defaults = array(
 			'page'     => 1,
-			'per_page' => 10,
+			'per_page' => 20,
 			'orderby'  => 'id',
 			'order'    => 'DESC',
 			'search'   => '',

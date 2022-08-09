@@ -34,7 +34,7 @@ abstract class RESTController extends WP_REST_Controller {
 	 * @return bool
 	 */
 	public function check_permission(): bool {
-		return true;
+		return is_user_logged_in();
 	}
 
 	/**

@@ -166,6 +166,7 @@ class JobsController extends RESTController {
 	 * @return WP_REST_Response|WP_Error
 	 */
 	public function create_item( $request ) {
+		die('dsdssdsd');
 		if ( ! empty( $request['id'] ) ) {
 			return new WP_Error(
 				'jobplace_rest_email_template_exists',
@@ -175,6 +176,7 @@ class JobsController extends RESTController {
 		}
 
 		$prepared_data = $this->prepare_item_for_database( $request );
+
 
 		if ( is_wp_error( $prepared_data ) ) {
 			return $prepared_data;
